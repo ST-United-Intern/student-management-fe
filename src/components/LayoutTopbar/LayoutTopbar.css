@@ -1,0 +1,26 @@
+.ant-layout-header {
+  background-color: #ffff;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trigger-bar {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger-bar:hover {
+  color: #691717 !important;
+}
+
+.img-drop {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  /* margin-right: 60px;
+  margin-top: 17px; */
+}

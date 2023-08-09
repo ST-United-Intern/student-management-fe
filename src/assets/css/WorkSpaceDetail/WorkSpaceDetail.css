@@ -1,0 +1,48 @@
+.workspace-container .workspace-text {
+  width: 200px;
+}
+
+.workspace-container .wrap-btn {
+  padding-bottom: 20px;
+}
+.workspace-container .wrap-btn .btn-workspace {
+  float: right;
+  background-color: #a7c957;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.workspace-container .wrap-btn .btn-workspace:hover {
+  background-color: #006400;
+  color: #fff;
+}
+
+.btn-space-remove {
+  background-color: #ffdab9;
+  color: black;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.btn-space-remove:hover {
+  background-color: red;
+  color: #fff !important;
+}
+
+.btn-space-reset {
+  background-color: #e0aaff;
+  color: black;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.btn-space-reset:hover {
+  background-color: #3c096c;
+  color: #fff !important;
+}
+
+.workspace-container .head-wrap {
+  margin-bottom: 16px;
+  margin-left: 3px;
+}
