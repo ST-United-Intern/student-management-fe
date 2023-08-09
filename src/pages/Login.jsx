@@ -3,7 +3,6 @@ import { useState } from "react";
 import { UserOutlined, KeyOutlined } from "@ant-design/icons";
 import axios from "axios";
 import "../assets/login/login.css";
-import { useLogin } from "../hooks/useAuth";
 
 const Login = () => {
   const API_URL = "http://localhost:3000/auth/login";

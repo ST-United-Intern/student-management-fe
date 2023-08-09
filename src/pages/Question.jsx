@@ -1,9 +1,8 @@
-import React from "react";
-import { Space, Table, Tag } from "antd";
+import { Table } from "antd";
 import { useQuestion } from "../hooks/useQuestion";
 
 const Question = () => {
-  const { data: listQuestion, isLoading: loadListQuestion } = useQuestion();
+  const { data: listQuestion } = useQuestion();
   const dataTable =
     listQuestion?.length &&
     Object.keys(listQuestion[0]).reduce((prev, curr) => {
