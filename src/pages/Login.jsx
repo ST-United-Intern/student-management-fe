@@ -3,18 +3,19 @@ import { useState } from "react";
 import { UserOutlined, KeyOutlined } from "@ant-design/icons";
 import axios from "axios";
 import "../assets/login/login.css";
+import { useLogin } from "../hooks/useAuth";
 
 const Login = () => {
   const API_URL = "http://localhost:3000/auth/login";
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const [setLoginStatus] = useState("");
-
-  const goToSignIn = () => {
-    history.push("/");
+  const goToSignUpTeacher = () => {
+    history.push("/sign-up-teacher");
   };
-
+  const goToSignUpStudent = () => {
+    history.push("/sign-up-student");
+  };
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
   };
@@ -31,13 +32,7 @@ const Login = () => {
       const response = await axios.post(API_URL, userData);
       console.log("<<<<<<  >>>>>>", response.data);
       console.log("<<<<<<  >>>>>>", response.status);
-      if (response.status === 201) {
-        setLoginStatus("Đăng nhập thành công");
-      } else {
-        setLoginStatus("Đăng nhập thất bại: " + response.data.message);
-      }
     } catch (error) {
-      setLoginStatus("Đăng nhập thất bại: có lỗi xảy ra");
       console.error("Lỗi khi đăng nhập:", error);
     }
   };
@@ -93,17 +88,24 @@ const Login = () => {
             </Form.Item>
 
             <Row>
-              <Col span={12}>
+              <Col span={8}>
                 <Form.Item className="sub-btn">
                   <Button htmlType="submit" size="large">
                     Login
                   </Button>
                 </Form.Item>
               </Col>
-              <Col span={12}>
+              <Col span={8}>
                 <Form.Item className="sub-btn">
-                  <Button size="large" onClick={goToSignIn}>
-                    Sign In
+                  <Button size="large" onClick={goToSignUpTeacher}>
+                    Sign up Teacher
+                  </Button>
+                </Form.Item>
+              </Col>
+              <Col span={8}>
+                <Form.Item className="sub-btn">
+                  <Button size="large" onClick={goToSignUpStudent}>
+                    Sign up student
                   </Button>
                 </Form.Item>
               </Col>
