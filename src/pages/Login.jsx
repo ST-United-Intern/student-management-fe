@@ -1,21 +1,14 @@
 import { Col, Row, Input, Button, Form } from "antd";
 import { UserOutlined, KeyOutlined } from "@ant-design/icons";
 import "../assets/login/login.css";
-import { useLogin } from "../hooks/useAuth";
 
-const GmailLoginForm = () => {
-  const { mutate: login, isLoading } = useLogin();
-
-  const onFinish = (values) => {
-    login(values);
-  };
-
+const Login = () => {
   return (
     <div className="login-session">
       <Row className="login-container">
         <Col className="left_side_login" span={12}></Col>
         <Col className="right_side_login" span={24} lg={12}>
-          <Form className="form-login" onFinish={onFinish}>
+          <Form className="form-login">
             <Form.Item className="form-logo">
               <img
                 className="login-image"
@@ -57,7 +50,7 @@ const GmailLoginForm = () => {
             </Form.Item>
 
             <Form.Item className="sub-btn">
-              <Button htmlType="submit" size="large" loading={isLoading}>
+              <Button htmlType="submit" size="large">
                 GET START
               </Button>
             </Form.Item>
@@ -68,4 +61,4 @@ const GmailLoginForm = () => {
   );
 };
 
-export default GmailLoginForm;
+export default Login;

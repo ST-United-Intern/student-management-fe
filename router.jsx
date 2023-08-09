@@ -1,13 +1,11 @@
-import { Outlet, createBrowserRouter } from "react-router-dom";
-import privateRoutes from "./src/routes/privateRoutes";
-import publicRoutes from "./src/routes/publicRoutes";
+import { createBrowserRouter } from "react-router-dom";
+import Login from "./src/pages/Login";
 
-const router = createBrowserRouter([
+const Router = createBrowserRouter([
   {
     path: "/",
-    element: <Outlet />,
-    children: [...privateRoutes, ...publicRoutes],
+    element: <Login />,
   },
 ]);
 
-export default router;
+export default Router;
