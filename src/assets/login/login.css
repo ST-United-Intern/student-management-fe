@@ -1,5 +1,5 @@
 .left_side_login {
-  background-image: url("https://i.pinimg.com/564x/ea/e6/28/eae628d52eedf3ea6f82366d4a2b3949.jpg");
+  background-image: url("https://mtv.vn/uploads/2023/02/25/meo-ff.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -34,7 +34,7 @@
   font-weight: 500;
   line-height: 20px;
   margin: 0 0 20px;
-  color: #985d09;
+  color: black;
 }
 
 .right_side_login .form-login p {
@@ -62,7 +62,7 @@
 
 .right_side_login .form-login > span {
   margin-bottom: 20px;
-  border-color: #f3d5b5;
+  border-color: #f3f3f3;
 }
 
 .right_side_login .form-login > span:hover {
@@ -74,12 +74,12 @@
 }
 
 .right_side_login .form-login .sub-btn button {
-  background-color: #f3d5b5;
+  background-color: #f3f3f3;
   font-weight: bold;
 }
 
 .right_side_login .form-login .sub-btn:hover button {
-  border-color: #f3d5b5 !important;
+  border-color: #f3f3f3 !important;
   color: white;
   background-color: #0d3b66;
 }

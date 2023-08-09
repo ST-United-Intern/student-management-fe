@@ -12,10 +12,10 @@ const Login = () => {
             <Form.Item className="form-logo">
               <img
                 className="login-image"
-                src="https://res.cloudinary.com/da3bmd8ak/image/upload/v1681356223/Logo.png"
+                src="https://catscanman.net/wp-content/uploads/2021/09/anh-meo-cute-de-thuong-34.jpg"
               />
             </Form.Item>
-            <h1>Welcome Back</h1>
+            <h1>Welcome to meo</h1>
 
             <p>Login to the Dashboard</p>
 
@@ -51,7 +51,7 @@ const Login = () => {
 
             <Form.Item className="sub-btn">
               <Button htmlType="submit" size="large">
-                GET START
+                Login
               </Button>
             </Form.Item>
           </Form>
