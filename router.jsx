@@ -15,6 +15,10 @@ const Router = createBrowserRouter([
     path: "/sign-up-student",
     element: <SignUpStudent />,
   },
+  {
+    path: "/question",
+    element: <Question />,
+  },
 ]);
 
 export default Router;
